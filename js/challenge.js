@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
       let targetSpan = targetLi.querySelector("span");
       targetLi.innerHTML = `${counter.innerHTML} has been liked <span>${parseInt(targetSpan.innerHTML)+1}</span> times.`
     }else{
-      likesList.innerHTML += `<li data-count="${counter.innerHTML}"> ${counter.innerHTML} has been liked <span>1</span> time.</li>`;
+      likesList.innerHTML += `<li data-count="${counter.innerHTML}">${counter.innerHTML} has been liked <span>1</span> time.</li>`;
     }
   });
 
